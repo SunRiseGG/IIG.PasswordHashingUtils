@@ -39,7 +39,7 @@ namespace IIG.Test.PasswordHashingUtils
         [TestMethod]
         public void TestCase_GetHash_0_1_2_3_4_5()
         {
-            string password = "-42069";
+            string password = "复";
             Assert.IsNotNull(PasswordHasher.GetHash(password));
             Assert.AreEqual(PasswordHasher.GetHash(password).Length, 64);
         }
